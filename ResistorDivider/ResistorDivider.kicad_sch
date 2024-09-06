@@ -1,359 +1,868 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid af9210b5-7d8b-4c04-bf84-eb920cf2148b)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Connector_Generic:Conn_01x01" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_01x01" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_01x01_1_1"
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 1.27) (end 1.27 -1.27)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R_US" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.54 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R_US" (at -2.54 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 1.016 -0.254 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R res resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor, US symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_US_0_1"
-        (polyline
-          (pts
-            (xy 0 -2.286)
-            (xy 0 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.286)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -0.762)
-            (xy 1.016 -1.143)
-            (xy 0 -1.524)
-            (xy -1.016 -1.905)
-            (xy 0 -2.286)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0.762)
-            (xy 1.016 0.381)
-            (xy 0 0)
-            (xy -1.016 -0.381)
-            (xy 0 -0.762)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.286)
-            (xy 1.016 1.905)
-            (xy 0 1.524)
-            (xy -1.016 1.143)
-            (xy 0 0.762)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_US_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 146.05 85.725) (diameter 0) (color 0 0 0 0)
-    (uuid 12c54aea-5314-4955-896e-8ee413196804)
-  )
-  (junction (at 146.05 104.14) (diameter 0) (color 0 0 0 0)
-    (uuid fc5a2592-6c9f-4d5d-9979-e52128060eaf)
-  )
-
-  (wire (pts (xy 146.05 104.14) (xy 146.05 100.33))
-    (stroke (width 0) (type default))
-    (uuid 14adf0bc-cd69-45b2-8ace-0dac63123c93)
-  )
-  (wire (pts (xy 156.21 104.14) (xy 146.05 104.14))
-    (stroke (width 0) (type default))
-    (uuid 1675077d-2adc-458b-850e-af06fbc4d631)
-  )
-  (wire (pts (xy 163.195 88.265) (xy 156.21 88.265))
-    (stroke (width 0) (type default))
-    (uuid 18390e64-4825-446b-ade0-8bce37c28919)
-  )
-  (wire (pts (xy 146.05 82.55) (xy 146.05 85.725))
-    (stroke (width 0) (type default))
-    (uuid 19ae5fa8-e065-47b1-be17-baa33391dafd)
-  )
-  (wire (pts (xy 135.255 71.755) (xy 135.255 85.725))
-    (stroke (width 0) (type default))
-    (uuid 54d95788-415d-4f33-acd8-61e749b4838f)
-  )
-  (wire (pts (xy 132.08 88.265) (xy 135.255 88.265))
-    (stroke (width 0) (type default))
-    (uuid 651e2bc9-4e68-47ce-82c5-4080952508f8)
-  )
-  (wire (pts (xy 156.21 88.265) (xy 156.21 104.14))
-    (stroke (width 0) (type default))
-    (uuid 66b38832-fe25-4ba8-82d7-c8836c261c40)
-  )
-  (wire (pts (xy 146.05 71.755) (xy 135.255 71.755))
-    (stroke (width 0) (type default))
-    (uuid 7427b48e-f77e-44e4-9952-bf5bf8c6926a)
-  )
-  (wire (pts (xy 146.05 74.93) (xy 146.05 71.755))
-    (stroke (width 0) (type default))
-    (uuid 8998c5d2-cf65-4aef-9d1a-2e48672ec971)
-  )
-  (wire (pts (xy 135.255 88.265) (xy 135.255 104.14))
-    (stroke (width 0) (type default))
-    (uuid 89b1b872-5ef9-48f8-998e-ec38f937303b)
-  )
-  (wire (pts (xy 135.255 85.725) (xy 132.08 85.725))
-    (stroke (width 0) (type default))
-    (uuid 95c608be-f87c-4371-8fdf-8ee3667b17c5)
-  )
-  (wire (pts (xy 135.255 104.14) (xy 146.05 104.14))
-    (stroke (width 0) (type default))
-    (uuid ae95e712-5139-4cd2-9bf6-437065c452e4)
-  )
-  (wire (pts (xy 146.05 85.725) (xy 163.195 85.725))
-    (stroke (width 0) (type default))
-    (uuid d62a8604-3ba6-4b2a-911f-25da17060019)
-  )
-  (wire (pts (xy 146.05 85.725) (xy 146.05 92.71))
-    (stroke (width 0) (type default))
-    (uuid ec908cd9-2aab-4bf6-87b1-f4d31b67f97f)
-  )
-
-  (text "5V to 3.3V:\nR1 = 4.7K\nR2 = 10K" (at 165.1 102.235 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 2549387c-5420-4ef0-a7c1-e6d8cd7f895d)
-  )
-  (text "12V to 5V:\nR1 = 4.7K\nR2 = 3.3K" (at 165.1 113.03 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 2b4cf940-ee84-4def-8ed7-8adf9769acab)
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 168.275 85.725 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 109c3d4e-6b47-4b96-834a-e6c2e84c3960)
-    (property "Reference" "J3" (at 168.275 81.4451 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "OUT" (at 168.275 83.3661 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm" (at 168.275 85.725 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 168.275 85.725 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fc9a1a30-3189-4161-afe5-297a63ce2b7a))
-    (instances
-      (project "ResistorDivider"
-        (path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
-          (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_US") (at 146.05 96.52 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 13fb82e9-0601-4873-9959-bb71db6135fd)
-    (property "Reference" "R2" (at 147.701 95.8763 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "R_US" (at 147.701 97.7973 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 147.066 96.774 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 146.05 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 627d4344-d146-4520-85ea-ad4ca455634b))
-    (pin "2" (uuid f9842ff0-0504-4ee7-8e87-06710ec09de5))
-    (instances
-      (project "ResistorDivider"
-        (path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
-          (reference "R2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_US") (at 146.05 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3db6e36a-fc84-4121-9be2-418857186db2)
-    (property "Reference" "R1" (at 147.701 78.0963 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "R_US" (at 147.701 80.0173 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 147.066 78.994 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 146.05 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e51d9535-1ddb-48e4-98c9-2723f61f485d))
-    (pin "2" (uuid 1ac4c16c-a9a2-4ba7-9ecc-8f69d68aebd3))
-    (instances
-      (project "ResistorDivider"
-        (path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
-          (reference "R1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 127 85.725 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5a5a1140-92ea-418d-b8d1-871880d75c56)
-    (property "Reference" "J1" (at 127 81.4451 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "IN" (at 127 83.3661 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm" (at 127 85.725 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 127 85.725 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid acdf5b87-98c4-466a-b8ad-2aeb054a1a66))
-    (instances
-      (project "ResistorDivider"
-        (path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 168.275 88.265 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid abe5840f-f86c-471a-9822-487afe69cc6d)
-    (property "Reference" "J4" (at 168.275 92.71 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "GND" (at 168.275 90.805 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm" (at 168.275 88.265 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 168.275 88.265 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2aafe027-6f6d-4f43-9442-2fe28be93ea2))
-    (instances
-      (project "ResistorDivider"
-        (path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
-          (reference "J4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x01") (at 127 88.265 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e99d806e-7e4e-44bb-a4b4-309f0ba872b9)
-    (property "Reference" "J2" (at 127 92.71 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "GND" (at 127 90.805 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm" (at 127 88.265 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 127 88.265 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9211adea-7640-4868-a272-54fb85bab35e))
-    (instances
-      (project "ResistorDivider"
-        (path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
-          (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "af9210b5-7d8b-4c04-bf84-eb920cf2148b")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 146.05 85.725)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12c54aea-5314-4955-896e-8ee413196804")
+	)
+	(junction
+		(at 146.05 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc5a2592-6c9f-4d5d-9979-e52128060eaf")
+	)
+	(wire
+		(pts
+			(xy 146.05 104.14) (xy 146.05 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14adf0bc-cd69-45b2-8ace-0dac63123c93")
+	)
+	(wire
+		(pts
+			(xy 156.21 104.14) (xy 146.05 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1675077d-2adc-458b-850e-af06fbc4d631")
+	)
+	(wire
+		(pts
+			(xy 163.195 88.265) (xy 156.21 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18390e64-4825-446b-ade0-8bce37c28919")
+	)
+	(wire
+		(pts
+			(xy 146.05 82.55) (xy 146.05 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19ae5fa8-e065-47b1-be17-baa33391dafd")
+	)
+	(wire
+		(pts
+			(xy 135.255 71.755) (xy 135.255 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54d95788-415d-4f33-acd8-61e749b4838f")
+	)
+	(wire
+		(pts
+			(xy 132.08 88.265) (xy 135.255 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "651e2bc9-4e68-47ce-82c5-4080952508f8")
+	)
+	(wire
+		(pts
+			(xy 156.21 88.265) (xy 156.21 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b38832-fe25-4ba8-82d7-c8836c261c40")
+	)
+	(wire
+		(pts
+			(xy 146.05 71.755) (xy 135.255 71.755)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7427b48e-f77e-44e4-9952-bf5bf8c6926a")
+	)
+	(wire
+		(pts
+			(xy 146.05 74.93) (xy 146.05 71.755)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8998c5d2-cf65-4aef-9d1a-2e48672ec971")
+	)
+	(wire
+		(pts
+			(xy 135.255 88.265) (xy 135.255 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89b1b872-5ef9-48f8-998e-ec38f937303b")
+	)
+	(wire
+		(pts
+			(xy 135.255 85.725) (xy 132.08 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c608be-f87c-4371-8fdf-8ee3667b17c5")
+	)
+	(wire
+		(pts
+			(xy 135.255 104.14) (xy 146.05 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae95e712-5139-4cd2-9bf6-437065c452e4")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.725) (xy 163.195 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d62a8604-3ba6-4b2a-911f-25da17060019")
+	)
+	(wire
+		(pts
+			(xy 146.05 85.725) (xy 146.05 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec908cd9-2aab-4bf6-87b1-f4d31b67f97f")
+	)
+	(text "5V to 3.3V:\nR1 = 4.7K\nR2 = 10K"
+		(exclude_from_sim no)
+		(at 165.1 102.235 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2549387c-5420-4ef0-a7c1-e6d8cd7f895d")
+	)
+	(text "12V to 5V:\nR1 = 4.7K\nR2 = 3.3K"
+		(exclude_from_sim no)
+		(at 165.1 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b4cf940-ee84-4def-8ed7-8adf9769acab")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 168.275 85.725 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "109c3d4e-6b47-4b96-834a-e6c2e84c3960")
+		(property "Reference" "J3"
+			(at 168.275 81.4451 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OUT"
+			(at 168.275 83.3661 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm"
+			(at 168.275 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.275 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.275 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc9a1a30-3189-4161-afe5-297a63ce2b7a")
+		)
+		(instances
+			(project "ResistorDivider"
+				(path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 146.05 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13fb82e9-0601-4873-9959-bb71db6135fd")
+		(property "Reference" "R2"
+			(at 147.701 95.8763 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_US"
+			(at 147.701 97.7973 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 147.066 96.774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.05 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "627d4344-d146-4520-85ea-ad4ca455634b")
+		)
+		(pin "2"
+			(uuid "f9842ff0-0504-4ee7-8e87-06710ec09de5")
+		)
+		(instances
+			(project "ResistorDivider"
+				(path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 146.05 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3db6e36a-fc84-4121-9be2-418857186db2")
+		(property "Reference" "R1"
+			(at 147.701 78.0963 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_US"
+			(at 147.701 80.0173 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 147.066 78.994 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 146.05 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e51d9535-1ddb-48e4-98c9-2723f61f485d")
+		)
+		(pin "2"
+			(uuid "1ac4c16c-a9a2-4ba7-9ecc-8f69d68aebd3")
+		)
+		(instances
+			(project "ResistorDivider"
+				(path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 127 85.725 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a5a1140-92ea-418d-b8d1-871880d75c56")
+		(property "Reference" "J1"
+			(at 127 81.4451 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IN"
+			(at 127 83.3661 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm"
+			(at 127 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "acdf5b87-98c4-466a-b8ad-2aeb054a1a66")
+		)
+		(instances
+			(project "ResistorDivider"
+				(path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 168.275 88.265 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abe5840f-f86c-471a-9822-487afe69cc6d")
+		(property "Reference" "J4"
+			(at 168.275 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.275 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm"
+			(at 168.275 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.275 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.275 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2aafe027-6f6d-4f43-9442-2fe28be93ea2")
+		)
+		(instances
+			(project "ResistorDivider"
+				(path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 127 88.265 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e99d806e-7e4e-44bb-a4b4-309f0ba872b9")
+		(property "Reference" "J2"
+			(at 127 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 90.805 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm"
+			(at 127 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9211adea-7640-4868-a272-54fb85bab35e")
+		)
+		(instances
+			(project "ResistorDivider"
+				(path "/af9210b5-7d8b-4c04-bf84-eb920cf2148b"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
